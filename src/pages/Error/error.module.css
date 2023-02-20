@@ -1,0 +1,47 @@
+.error {
+    max-width: 1440px;
+    padding: 0 40px;
+    margin: auto;    
+    color: #FF6060;
+}
+
+.error__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.error__title {
+    font-size: 288px;
+    font-weight: 700;
+}
+
+.error__p {
+    font-size: 36px;
+    margin-bottom: 188px;
+}
+
+.error__toHome {
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 750px) {
+    .error {
+        padding: 0 20px;  
+    }
+
+    .error__body {
+        margin-top: 180px;
+    }
+
+    .error__title {
+        font-size: 96px;
+    }
+
+    .error__p {
+        font-size: 18px;
+    }
+}
