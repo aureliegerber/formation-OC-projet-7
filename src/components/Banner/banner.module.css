@@ -1,0 +1,39 @@
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1240px;
+    height: 223px;
+    margin: 50px auto;    
+    border-radius: 25px;
+    background-position: center;
+}
+
+.banner__home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/banner-home.png");    
+}
+
+.banner__about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/banner-about.png");    
+}
+
+.banner__title {
+    color: #FFFFFF;    
+}
+
+@media screen and (max-width: 900px) {
+    .banner__home {
+        height: 111px;
+        margin: 20px auto;               
+    }
+
+    .banner__about {
+        height: 223px;
+        margin: 20px auto;             
+    }
+
+    .banner__title {
+        font-size: 24px;
+        margin-left: 16px;
+    }
+}
