@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    max-width: 1240px;    
+    margin: 50px auto;
+}
+
+.logo {    
+    width: 210px;    
+}
+
+.menu {
+    display: flex;
+    gap: 50px;
+    font-size: 24px;    
+}
+
+.item {
+    color: #FF6060;
+}
+
+.item_active {    
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+    .logo {
+        width: 145px;
+    }
+    .menu {
+        gap: 25px;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 500px) {    
+    .menu {
+        gap: 25px;
+        font-size: 12px;
+    }
+}
