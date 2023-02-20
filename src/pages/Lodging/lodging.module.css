@@ -1,0 +1,115 @@
+.container {
+    max-width: 1440px;    
+    padding: 0 40px;
+    margin: auto;
+}
+
+.lodging__infos {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1240px;
+    margin: auto;
+}
+
+.lodging__titles {
+    color: #FF6060;
+    line-height: 1.5;
+}
+
+.lodging__titles h1 {
+    font-size: 36px;
+}
+
+.lodging__titles h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.lodging__tags button {
+    margin-right: 10px;
+    padding: 5px 15px;
+    background-color: #FF6060;
+    border: none;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+
+.infos__aside {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.lodging__host {
+    display: flex;    
+    font-size: 18px;
+    color: #FF6060;
+    justify-content: end;
+    align-items: center;
+}
+
+.host__name {
+    width: 45%;
+    margin-right: 15px;
+    text-align: end;
+    font-size: 18px;
+}
+
+.host__picture {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.lodging__rating {
+    margin-top: 24px;
+}
+
+.lodging__description {    
+    display: flex;
+    max-width: 1240px;
+    justify-content: space-between;
+    gap: 25px;
+    margin: 0 auto 50px;    
+}
+
+.equipments__list {
+    list-style-type: none;
+}
+
+@media screen and (max-width: 750px) {
+    .container {
+        padding: 0 20px;  
+    }
+
+    .lodging__infos {
+        flex-direction: column;
+    }
+
+    .infos__aside {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .rating__star {
+        width: 12%;
+    }
+
+    .lodging__description {
+        flex-direction: column;        
+    }
+
+    .lodging__titles h1 {
+        font-size: 18px;
+    }
+
+    .lodging__titles h2 {
+        font-size: 14px;
+    }
+
+    .host__name {
+        font-size: 12px;
+    }
+}
