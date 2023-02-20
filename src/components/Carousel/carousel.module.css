@@ -1,0 +1,49 @@
+.carousel {
+    position: relative;
+    max-width: 1240px;
+    margin: auto;
+}
+
+.carousel__img {    
+    width: 100%;
+    object-fit: cover;
+    max-height: 415px;
+    border-radius: 25px;    
+}
+
+.carousel__arrow {
+    position: absolute;
+    top: 37%;
+    cursor: pointer;
+}
+
+.carousel__arrow__right {
+    right: 25px;
+}
+
+.carousel__arrow__left {
+    left: 25px;
+}
+
+.carousel__count {
+    position: relative;
+    bottom: 55px;
+    left: 50%;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 750px) {
+    .carousel__arrow {
+        top: 40%;    
+        width: 20px;
+    }
+
+    .carousel__arrow__right {
+        right: 15px;
+    }
+    
+    .carousel__arrow__left {
+        left: 15px;
+    }    
+}
