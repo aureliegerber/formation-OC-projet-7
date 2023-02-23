@@ -12,20 +12,22 @@
 
 .collapse__title_home {
     font-size: 24px;
+    font-weight: 500;
 }
 
 .collapse__title_lodging {
     font-size: 18px;
+    font-weight: 500;
 }
 
 .collapse__header {
     display: flex;
     justify-content: space-between;
+    padding: 10px 15px;
     background-color: #FF6060;
     color: #FFFFFF;
     border-radius: 10px;
-    font-size: 24px;
-    padding: 10px 15px;    
+    font-size: 24px;    
 }
 
 .collapse__arrow {
@@ -40,8 +42,7 @@
 .collapse__content {
     position: relative;
     padding: 25px 20px 15px 20px;
-    margin-top: -15px;
-    font-weight: 400;
+    margin-top: -15px;    
     font-size: 24px;
     background-color: #F7F7F7;    
     border-radius: 10px;  
@@ -53,17 +54,47 @@
     display: none;
 }
 
+.collapse__content_about {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.collapse__content_lodging {
+    font-size: 18px;
+    font-weight: 400;
+}
+
 @media screen and (max-width: 750px) {
-    .collapse {      
-        margin: 0;
+    .collapse__about {      
+        margin: 0 auto 30px;
+    }
+
+    .collapse__lodging {      
+        margin: 0 auto;
     }    
 
     .collapse__lodging {
         width: 100%;    
     }
 
+    .collapse__title_home {
+    font-size: 13px;    
+    }
+
     .collapse__title_lodging {
         font-size: 13px;
     }
     
+    .collapse__arrow {
+        width: 20px;
+    }
+
+    .collapse__content_about {
+    font-size: 12px;    
+    }
+
+    .collapse__content_lodging {
+    font-size: 12px;    
+    }
+
 }
