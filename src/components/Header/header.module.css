@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;    
     max-width: 1240px;    
-    margin: 50px auto;
+    margin: 40px auto;
 }
 
 .logo {    
@@ -13,7 +13,8 @@
 .menu {
     display: flex;
     gap: 50px;
-    font-size: 24px;    
+    font-size: 24px;
+    font-weight: 500;
 }
 
 .item {
@@ -25,9 +26,14 @@
 }
 
 @media screen and (max-width: 900px) {
+    .header {
+        margin: 20px auto;
+    }
+
     .logo {
         width: 145px;
-    }
+    } 
+
     .menu {
         gap: 25px;
         font-size: 18px;
@@ -36,8 +42,12 @@
 }
 
 @media screen and (max-width: 500px) {    
+    .logo {
+        width: 120px;
+    } 
+
     .menu {
-        gap: 25px;
+        gap: 15px;
         font-size: 12px;
     }
 }
