@@ -14,7 +14,8 @@ function About() {
                 <div className={styles.about__body}>
                     {datas.map(data => {
                         return (
-                            <Collapse                                
+                            <Collapse
+                                key={data.id}                              
                                 title={data.title}
                                 content={data.content}
                             />
