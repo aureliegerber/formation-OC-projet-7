@@ -1,7 +1,7 @@
 .carousel {
     position: relative;
     max-width: 1240px;
-    margin: auto;
+    margin: 0 auto 25px;
 }
 
 .carousel__img {    
@@ -13,7 +13,7 @@
 
 .carousel__arrow {
     position: absolute;
-    top: 37%;
+    top: 40%;
     cursor: pointer;
 }
 
@@ -26,16 +26,19 @@
 }
 
 .carousel__count {
-    position: relative;
-    bottom: 55px;
+    position: absolute;
+    bottom: 40px;
     left: 50%;
     color: #FFFFFF;
     font-size: 18px;
 }
 
 @media screen and (max-width: 750px) {
+    .carousel {
+        margin: 0 auto 10px;
+    }
     .carousel__arrow {
-        top: 40%;    
+        top: 45%;    
         width: 20px;
     }
 
@@ -45,5 +48,9 @@
     
     .carousel__arrow__left {
         left: 15px;
-    }    
+    }
+
+    .carousel__count {        
+        bottom: 20px;        
+    }
 }
