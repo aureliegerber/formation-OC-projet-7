@@ -6,6 +6,7 @@ function Card({id, title, cover}) {
 		<article className={styles.gallery__card}>
 			<Link to={`/lodging/${id}`}>
 				<img src={cover} alt={title} />
+				<div className={styles.gallery__img}></div>
 				<h3>{title}</h3>	
 			</Link>			
 		</article>
