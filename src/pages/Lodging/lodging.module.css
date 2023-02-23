@@ -75,6 +75,7 @@
 
 .equipments__list {
     list-style-type: none;
+    font-weight: 400;
 }
 
 @media screen and (max-width: 750px) {
