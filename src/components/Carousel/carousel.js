@@ -20,20 +20,24 @@ function Carousel({array}) {
 
     return (
         <section className={styles.carousel}>
-            <img src={array[currentIndex]} className={styles.carousel__img}/>
-            <img 
-                className={`${styles.carousel__arrow} ${styles.carousel__arrow__right}`}
-                src={arrowRight}
-                alt="Image suivante"
-                onClick={nextSlide}
-            />            
-            <img 
-                className={`${styles.carousel__arrow} ${styles.carousel__arrow__left}`}
-                src={arrowLeft}
-                alt="Image précédente"
-                onClick={prevSlide}
-            />
-            <p className={styles.carousel__count}>{currentIndex + 1} / {array.length}</p>
+            <img src={array[currentIndex]} className={styles.carousel__img} alt="Photo de l'appartement"/>
+            {array.length > 1 &&
+                <>
+                    <img 
+                        className={`${styles.carousel__arrow} ${styles.carousel__arrow__right}`}
+                        src={arrowRight}
+                        alt="Image suivante"
+                        onClick={nextSlide}
+                    />            
+                    <img 
+                        className={`${styles.carousel__arrow} ${styles.carousel__arrow__left}`}
+                        src={arrowLeft}
+                        alt="Image précédente"
+                        onClick={prevSlide}
+                    />
+                    <p className={styles.carousel__count}>{currentIndex + 1} / {array.length}</p>
+                </>
+            }
         </section>
     )
 }
