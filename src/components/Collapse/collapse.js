@@ -13,7 +13,7 @@ function Collapse({title, content}) {
                 <img src={arrow} alt="Afficher le contenu" className={toggle ? `${styles.collapse__arrow}` : `${styles.collapse__arrow} ${styles.collapse__arrow_up}`} onClick={() => setToggle(!toggle)}></img>
             </div>
             <div className={toggle ? `${styles.collapse__content}` : `${styles.collapse__content_hidden}`}>
-                <p>{content}</p>
+                <p className={window.location.pathname === "/about" ? `${styles.collapse__content_about}` : `${styles.collapse__content_lodging}`}>{content}</p>
             </div>
         </div>            
     )
