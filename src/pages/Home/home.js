@@ -4,6 +4,11 @@ import Gallery from "../../components/Gallery/gallery";
 import Footer from "../../components/Footer/footer";
 import styles from "./home.module.css";
 
+/**
+ * Home component
+ * @return {HTMLElement}
+ */
+
 function Home() {
   return (
     <div>

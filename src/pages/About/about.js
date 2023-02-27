@@ -5,6 +5,11 @@ import Banner from "../../components/Banner/banner";
 import Footer from "../../components/Footer/footer";
 import Collapse from "../../components/Collapse/collapse";
 
+/**
+ * About component
+ * @return {HTMLElement}
+ */
+
 function About() {
   return (
     <div>

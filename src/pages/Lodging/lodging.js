@@ -9,6 +9,11 @@ import greyStar from "../../assets/grey_star.png";
 import redStar from "../../assets/red_star.png";
 import styles from "./lodging.module.css";
 
+/**
+ * Lodging component
+ * @return {HTMLElement}
+ */
+
 function Lodging() {
   const params = useParams();
   const dataLodging = datas.find((data) => data.id === params.id);
@@ -51,11 +56,11 @@ function Lodging() {
                 <img
                   src={picture}
                   className={styles.host__picture}
-                  alt="Hôte"
+                  alt={name}
                 />
               </div>
-              <span className={styles.lodging__rating}>
-                {[...Array(5)].map((star, index) => {
+              <span className={styles.lodging__rating}>                
+                {[...Array(5)].map((star, index) => {                  
                   let ratingValue = index + 1;
                   return (
                     <img
