@@ -23,6 +23,10 @@
 }
 
 @media screen and (max-width: 900px) {
+    .banner {
+        border-radius: 10px;
+    }
+    
     .banner__home {
         height: 111px;
         margin: 20px auto;               
