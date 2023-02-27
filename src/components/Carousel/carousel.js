@@ -3,6 +3,12 @@ import arrowRight from "../../assets/arrow_carousel_right.png";
 import arrowLeft from "../../assets/arrow_carousel_left.png";
 import { useState } from "react";
 
+/**
+ * Carousel component
+ * @param {array} array - Table of the images of the lodging
+ * @return {HTMLElement}
+ */
+
 function Carousel({ array }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -21,26 +27,26 @@ function Carousel({ array }) {
       <img
         src={array[currentIndex]}
         className={styles.carousel__img}
-        alt="Photo de l'appartement"
+        alt="Appartement"
       />
       {array.length > 1 && (
-        <>
+        <div>
           <img
             className={`${styles.carousel__arrow} ${styles.carousel__arrow__right}`}
             src={arrowRight}
-            alt="Image suivante"
+            alt="Photo suivante"
             onClick={nextSlide}
           />
           <img
             className={`${styles.carousel__arrow} ${styles.carousel__arrow__left}`}
             src={arrowLeft}
-            alt="Image précédente"
+            alt="Photo précédente"
             onClick={prevSlide}
           />
           <p className={styles.carousel__count}>
             {currentIndex + 1} / {array.length}
           </p>
-        </>
+        </div>
       )}
     </section>
   );
