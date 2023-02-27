@@ -1,5 +1,10 @@
 import styles from "./banner.module.css";
 
+/**
+ * Banner component
+ * @return {HTMLElement}
+ */
+
 function Banner() {
   if (window.location.pathname === "/") {
     return (
