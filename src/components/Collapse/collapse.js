@@ -2,8 +2,15 @@ import styles from "./collapse.module.css";
 import arrow from "../../assets/arrow.png";
 import { useState } from "react";
 
+/**
+ * Collapse component
+ * @param {string} title - Title of the collapse
+ * @param {string} content - Content of the collapse
+ * @return {HTMLElement}
+ */
+
 function Collapse({ title, content }) {
-  const [toggle, setToggle] = useState(false);
+  const [opening, setOpening] = useState(false);
 
   return (
     <div
@@ -13,7 +20,13 @@ function Collapse({ title, content }) {
           : `${styles.collapse} ${styles.collapse__lodging}`
       }
     >
-      <div className={styles.collapse__header}>
+      <div
+        className={
+          window.location.pathname === "/about"
+            ? `${styles.collapse__header} ${styles.collapse__header_about}`
+            : `${styles.collapse__header} ${styles.collapse__header_lodging}`
+        }
+      >
         <h3
           className={
             window.location.pathname === "/about"
@@ -27,16 +40,16 @@ function Collapse({ title, content }) {
           src={arrow}
           alt="Afficher le contenu"
           className={
-            toggle
+            opening
               ? `${styles.collapse__arrow}`
               : `${styles.collapse__arrow} ${styles.collapse__arrow_up}`
           }
-          onClick={() => setToggle(!toggle)}
+          onClick={() => setOpening(!opening)}
         ></img>
       </div>
       <div
         className={
-          toggle
+          opening
             ? `${styles.collapse__content}`
             : `${styles.collapse__content_hidden}`
         }
