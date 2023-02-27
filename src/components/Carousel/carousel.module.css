@@ -7,7 +7,7 @@
 .carousel__img {    
     width: 100%;
     object-fit: cover;
-    max-height: 415px;
+    height: 415px;
     border-radius: 25px;    
 }
 
@@ -37,6 +37,11 @@
     .carousel {
         margin: 0 auto 10px;
     }
+
+    .carousel__img {
+        height: 255px;          
+    }
+
     .carousel__arrow {
         top: 45%;    
         width: 20px;
