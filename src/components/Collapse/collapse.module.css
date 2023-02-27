@@ -25,9 +25,16 @@
     justify-content: space-between;
     padding: 10px 15px;
     background-color: #FF6060;
-    color: #FFFFFF;
-    border-radius: 10px;
+    color: #FFFFFF;    
     font-size: 24px;    
+}
+
+.collapse__header_lodging {
+    border-radius: 10px;
+}
+
+.collapse__header_about {
+    border-radius: 5px;
 }
 
 .collapse__arrow {
@@ -66,7 +73,7 @@
 
 @media screen and (max-width: 750px) {
     .collapse__about {      
-        margin: 0 auto 30px;
+        margin: 0 auto 20px;
     }
 
     .collapse__lodging {      
