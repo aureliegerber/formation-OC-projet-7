@@ -2,6 +2,11 @@ import styles from "./gallery.module.css";
 import datas from "../../datas/lodgingList.json";
 import Card from "../Card/card";
 
+/**
+ * Gallery component
+ * @return {HTMLElement}
+ */
+
 function Gallery() {
   return (
     <section className={styles.gallery}>
