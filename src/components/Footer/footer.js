@@ -1,6 +1,11 @@
 import styles from "./footer.module.css";
 import logo from "../../assets/logo-footer.png";
 
+/**
+ * Footer component 
+ * @return {HTMLElement}
+ */
+
 function Footer() {
   return (
     <footer className={styles.footer}>
