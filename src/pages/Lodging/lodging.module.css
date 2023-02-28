@@ -73,8 +73,7 @@
     margin: 0 auto 50px;    
 }
 
-.equipments__list {
-    list-style-type: none;
+.equipments__list {    
     font-weight: 400;
 }
 
