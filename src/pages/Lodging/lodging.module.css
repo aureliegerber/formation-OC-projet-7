@@ -31,6 +31,7 @@
     background-color: #FF6060;
     border: none;
     border-radius: 10px;
+    font-size: 14px;
     color: #FFFFFF;
 }
 
@@ -78,6 +79,16 @@
     list-style-type: none;
 }
 
+@media screen and (max-width: 1045px) {
+    .lodging__titles h1 {
+        font-size: 25px;
+    }
+
+    .rating__star {
+        width: 20%;
+    }
+}
+
 @media screen and (max-width: 750px) {
     .container {
         padding: 0 20px;  
@@ -85,6 +96,11 @@
 
     .lodging__infos {
         flex-direction: column;
+    }
+
+    .lodging__tags button {
+        margin-bottom: 10px;      
+        font-size: 10px;        
     }
 
     .infos__aside {
@@ -111,6 +127,7 @@
     }
 
     .host__name {
+        width: 40%;
         font-size: 12px;
     }
 }
