@@ -80,9 +80,9 @@ function Lodging() {
               title="Équipements"
               content={equipments.map((equipment, index) => {
                 return (
-                  <p key={index} className={styles.equipments__list}>
+                  <li key={index} className={styles.equipments__list}>
                     {equipment}
-                  </p>
+                  </li>
                 );
               })}
             />

@@ -54,7 +54,7 @@ function Collapse({ title, content }) {
             : `${styles.collapse__content_hidden}`
         }
       >
-        <p
+        <ul
           className={
             window.location.pathname === "/about"
               ? `${styles.collapse__content_about}`
@@ -62,7 +62,7 @@ function Collapse({ title, content }) {
           }
         >
           {content}
-        </p>
+        </ul>
       </div>
     </div>
   );
