@@ -22,7 +22,7 @@
     border-radius: 10px;    
 }
 
-.gallery__card h3 {    
+.gallery__card h2 {    
     position: absolute;
     z-index: 2;
     left: 20px;

@@ -27,7 +27,7 @@ function Collapse({ title, content }) {
             : `${styles.collapse__header} ${styles.collapse__header_lodging}`
         }
       >
-        <h3
+        <p
           className={
             window.location.pathname === "/about"
               ? `${styles.collapse__title_home}`
@@ -35,7 +35,7 @@ function Collapse({ title, content }) {
           }
         >
           {title}
-        </h3>
+        </p>
         <img
           src={arrow}
           alt="Afficher le contenu"

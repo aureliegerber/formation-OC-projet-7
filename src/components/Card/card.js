@@ -15,7 +15,7 @@ function Card({ id, title, cover }) {
       <Link to={`/lodging/${id}`}>
         <img src={cover} alt={title} />
         <div className={styles.gallery__img}></div>
-        <h3>{title}</h3>
+        <h2>{title}</h2>
       </Link>
     </article>
   );
